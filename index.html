@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-4728695717381838">
+    <meta name="theme-color" content="#040918">
+    <meta property="og:title" content="RamWare - Download Software Terpercaya">
+    <meta property="og:description" content="Download software cepat, aman, dan gratis hanya di RamWare.">
+    <meta property="og:image" content="https://ramwareiso.netlify.app/preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://ramwareiso.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="rama.png">
+    <title>RamWare - OS Library</title>
+</head>
+
+<body>
+    <!-- Latar -->
+    <div class="aurora"><i></i><i></i><i></i></div>
+    <div class="grid-bg"></div>
+    <canvas id="particles"></canvas>
+    <div class="progress" id="progress"></div>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></symbol>
+    </svg>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <header class="hero">
+            <div class="logo-wrap">
+                <img src="rama.png" alt="Logo RamWare" class="logo-img">
+            </div>
+            <h1 class="brand">RamWare</h1>
+            <p class="sub">OS Library</p>
+            <p class="typing" aria-live="off"><b id="typing"></b></p>
+
+            <div class="stats">
+                <div class="stat"><strong id="countFiles">0</strong>file</div>
+                <div class="stat"><strong id="countCats">0</strong>kategori</div>
+                <div class="stat"><strong>Gratis</strong>untuk semua</div>
+            </div>
+        </header>
+
+        <!-- CARI & FILTER -->
+        <div class="toolbar">
+            <label class="search">
+                <input type="search" id="search" placeholder="Cari file, misalnya Windows 11 atau Debian" autocomplete="off">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            </label>
+            <div class="chips" id="chips">
+                <button class="chip active" data-filter="all">Semua</button>
+                <button class="chip" data-filter="ghost">Ghost Spectre</button>
+                <button class="chip" data-filter="win">Windows Ori</button>
+                <button class="chip" data-filter="debian">Debian</button>
+                <button class="chip" data-filter="ubuntu">Ubuntu</button>
+                <button class="chip" data-filter="exe">EXE</button>
+                <button class="chip chip-ori" data-filter="ori">ORI</button>
+                <button class="chip chip-crack" data-filter="crack">CRACK</button>
+            </div>
+        </div>
+
+        <!-- INFO ORI / CRACK -->
+        <aside class="notice reveal" id="notice">
+            <div class="notice-title">
+                <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9 2.4 17.5A2 2 0 0 0 4.1 20.5h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+                Baca dulu sebelum download
+            </div>
+            <div class="notice-row"><span class="tag ori">ORI</span><p>File asli, tanpa modifikasi atau crack. Cocok kalau kamu punya lisensi sendiri.</p></div>
+            <div class="notice-row"><span class="tag crack">CRACK</span><p>Versi modifikasi atau pre-aktivasi, bukan rilis resmi vendor. Bisa terdeteksi antivirus (false positive) dan dipakai dengan risiko sendiri. Scan dulu sebelum dijalankan.</p></div>
+        </aside>
+
+        <!-- DAFTAR FILE -->
+        <div class="catalog" id="catalog">
+
+            <section class="cat" data-cat="ghost">
+                <h2 class="cat-head">Windows Ghost Spectre</h2>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1O_X8tQMCArb3WN132Ev0PEt5Ka6H9jPc/view?usp=sharing">
+                    <span class="ico">G</span><span class="name">Windows 10 Ghost Spectre Pro 21H2</span><span class="tag crack">CRACK</span><span class="size">3.6 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://www.mediafire.com/file/y06liyv473vs20k/W.11.ProLite+24H2.B26100.7171.Nov25.GS.kuyhAa.7z/file">
+                    <span class="ico">G</span><span class="name">Windows 11 Ghost Spectre Pro 24H2</span><span class="tag crack">CRACK</span><span class="size">5.15 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://www.mediafire.com/file/pzg2q5ik4sbdwio/ISO_WIN_11_GS_.zip/file">
+                    <span class="ico">G</span><span class="name">Windows 11 Ghost Spectre (ISO)</span><span class="tag crack">CRACK</span><span class="size">5.29</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+            </section>
+
+            <section class="cat" data-cat="win">
+                <h2 class="cat-head">Windows Ori</h2>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/w2gnoi3goxs10j8/Win.10.Pro.22H2.19045.6812.kuyhAa.7z/file">
+                    <span class="ico">W</span><span class="name">Windows 10 Pro 22H2</span><span class="tag ori">ORI</span><span class="size">5.91 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/nwhkstoi1zsyre3/W11.24H2.Pro.(26100.7840).kuyhAa.7z/file">
+                    <span class="ico">W</span><span class="name">Windows 11 Pro 24H2</span><span class="tag ori">ORI</span><span class="size">5.13 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://od.meong.club/kuyccn/campur/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.kuyhAa.iso">
+                    <span class="ico">W</span><span class="name">Windows 7 Ultimate</span><span class="tag ori">ORI</span><span class="size">3.1 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+            </section>
+
+            <section class="cat" data-cat="debian">
+                <h2 class="cat-head">Debian</h2>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://cdimage.debian.org/cdimage/archive/12.10.0/amd64/iso-cd/debian-12.10.0-amd64-netinst.iso">
+                    <span class="ico">D</span><span class="name">Debian 12.10.0 amd64</span><span class="tag ori">ORI</span><span class="size">633 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/ybki19bndht426g/repository_Debian_12.rar/file">
+                    <span class="ico">D</span><span class="name">Repository Debian 12</span><span class="tag ori">ORI</span><span class="size">1 KB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://kebo.pens.ac.id/debian-cd/10.9.0/amd64/iso-dvd/debian-10.9.0-amd64-DVD-1.iso">
+                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-1</span><span class="tag ori">ORI</span><span class="size">3.7 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://kebo.pens.ac.id/debian-cd/10.9.0/amd64/iso-dvd/debian-10.9.0-amd64-DVD-2.iso">
+                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-2</span><span class="tag ori">ORI</span><span class="size">4.4 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://kebo.pens.ac.id/debian-cd/10.9.0/amd64/iso-dvd/debian-10.9.0-amd64-DVD-3.iso">
+                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-3</span><span class="tag ori">ORI</span><span class="size">4.4 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+            </section>
+
+            <section class="cat" data-cat="ubuntu">
+                <h2 class="cat-head">Ubuntu</h2>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://ubuntu.com/download/desktop/thank-you?version=25.10&amp;architecture=amd64">
+                    <span class="ico">U</span><span class="name">Ubuntu 25.10 Desktop amd64</span><span class="tag ori">ORI</span><span class="size">5.3 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+            </section>
+
+            <section class="cat" data-cat="exe">
+                <h2 class="cat-head">EXE &amp; Tools</h2>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/oiaqyhzlcqh3g58/VRITUAL_AND_VMware.rar/file">
+                    <span class="ico">E</span><span class="name">Virtual and VMware</span><span class="tag ori">ORI</span><span class="size">588 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1HkiyHnDBscNm7rTjfzG5KgQfcbGEImjI/view?usp=sharing">
+                    <span class="ico">E</span><span class="name">Driver Pack</span><span class="tag ori">ORI</span><span class="size">651 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1IIlcyo4_6MKeEh-arG-VDRkWYDLtcJWl/view?usp=sharing">
+                    <span class="ico">E</span><span class="name">Office Word, Excel, PowerPoint</span><span class="tag crack">CRACK</span><span class="size">1.8 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/fabd54rk1bogzcn/FileZilla_3.69.1_win64_Rm-setup.exe/file">
+                    <span class="ico">E</span><span class="name">FileZilla 3.69.1 (win64)</span><span class="tag ori">ORI</span><span class="size">12 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/9de75zwjyv1sl4g/Packet_Tracer822_64bit_setup_signed_Rm_.exe/file">
+                    <span class="ico">E</span><span class="name">Cisco Packet Tracer</span><span class="tag ori">ORI</span><span class="size">227 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/0owfgsnhs660mm4/WinSCP-6.5-Setup.exe/file">
+                    <span class="ico">E</span><span class="name">WinSCP 6.5</span><span class="tag ori">ORI</span><span class="size">12 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/ve8wwkt4turnic8/xampp-windows-x64-8.2.12-0-VS16-installer.exe/file">
+                    <span class="ico">E</span><span class="name">XAMPP 8.2.12</span><span class="tag ori">ORI</span><span class="size">150 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://github.com/rmamln/Activasi-win-11/releases/download/MicrosoftActivationScripts(MAS)v3.12/Activator.win.11.zip">
+                    <span class="ico">E</span><span class="name">Microsoft Activation Scripts (MAS) v3.12 tools</span><span class="tag crack">CRACK</span><span class="size">180 KB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://github.com/rmamln/NitroPDF-Pro-Enterprisex64-Rm/releases/download/NitroPDFProEnterprisex64Rm/NitroPDF.Pro.Enterprisex64.Rm.exe">
+                    <span class="ico">E</span><span class="name">NitroPDF Pro Enterprisex64 Rm</span><span class="tag crack">CRACK</span><span class="size">332 KB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                </a>
+
+            </section>
+
+            <div class="empty" id="empty">Tidak ada file yang cocok. Coba kata kunci lain atau pilih kategori Semua.</div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> RamWare. All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <button class="to-top" id="toTop" aria-label="Kembali ke atas">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+<script>
+(() => {
+    const $  = (s, r = document) => r.querySelector(s);
+    const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    /* Tahun footer */
+    $("#year").textContent = new Date().getFullYear();
+
+    /* Hitung file & kategori (animasi count-up) */
+    const items = $$(".item");
+    const countUp = (el, to) => {
+        if (reduce) { el.textContent = to; return; }
+        const t0 = performance.now(), dur = 1200;
+        const tick = (t) => {
+            const p = Math.min((t - t0) / dur, 1);
+            el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+            if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+    };
+    setTimeout(() => {
+        countUp($("#countFiles"), items.length);
+        countUp($("#countCats"), $$(".cat").length);
+    }, 700);
+
+    /* Efek ketik */
+    const words = ["Windows Ghost Spectre", "Windows Original", "Debian", "Ubuntu", "Driver, Office & Tools"];
+    const out = $("#typing");
+    if (reduce) {
+        out.textContent = words.join(" • ");
+    } else {
+        let w = 0, c = 0, del = false;
+        const type = () => {
+            const word = words[w];
+            out.textContent = word.slice(0, c);
+            if (!del && c === word.length) { del = true; return setTimeout(type, 1400); }
+            if (del && c === 0) { del = false; w = (w + 1) % words.length; return setTimeout(type, 350); }
+            c += del ? -1 : 1;
+            setTimeout(type, del ? 35 : 75);
+        };
+        setTimeout(type, 900);
+    }
+
+    /* Progress scroll + tombol ke atas */
+    const bar = $("#progress"), top = $("#toTop");
+    const onScroll = () => {
+        const h = document.documentElement.scrollHeight - innerHeight;
+        bar.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+        top.classList.toggle("show", scrollY > 500);
+    };
+    addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    top.addEventListener("click", () => scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }));
+
+    /* Reveal saat scroll (berurutan per kategori) */
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+            if (!en.isIntersecting) return;
+            en.target.classList.add("in");
+            io.unobserve(en.target);
+        });
+    }, { threshold: 0.12 });
+    $$(".cat").forEach((cat) => {
+        $$(".item", cat).forEach((it, i) => {
+            it.style.setProperty("--d", (i * 0.07) + "s");
+            io.observe(it);
+        });
+    });
+
+    io.observe($("#notice"));
+
+    /* Ripple saat klik */
+    items.forEach((it) => it.addEventListener("click", (e) => {
+        const r = it.getBoundingClientRect();
+        const s = document.createElement("span");
+        s.className = "ripple";
+        s.style.left = (e.clientX - r.left) + "px";
+        s.style.top  = (e.clientY - r.top) + "px";
+        it.appendChild(s);
+        setTimeout(() => s.remove(), 650);
+    }));
+
+    /* Cari + filter kategori */
+    let filter = "all";
+    const input = $("#search"), empty = $("#empty");
+    const apply = () => {
+        const q = input.value.trim().toLowerCase();
+        let shown = 0;
+        const isTag = filter === "ori" || filter === "crack";
+        $$(".cat").forEach((cat) => {
+            const catOk = filter === "all" || isTag || cat.dataset.cat === filter;
+            let n = 0;
+            $$(".item", cat).forEach((it) => {
+                const ok = catOk && (!isTag || it.dataset.tag === filter) && it.textContent.toLowerCase().includes(q);
+                it.classList.toggle("hidden", !ok);
+                if (ok) { n++; it.classList.add("in"); }
+            });
+            cat.classList.toggle("hidden", n === 0);
+            shown += n;
+        });
+        empty.classList.toggle("show", shown === 0);
+    };
+    input.addEventListener("input", apply);
+    $("#chips").addEventListener("click", (e) => {
+        const b = e.target.closest(".chip");
+        if (!b) return;
+        $$(".chip").forEach((c) => c.classList.toggle("active", c === b));
+        filter = b.dataset.filter;
+        apply();
+    });
+
+    /* Partikel jaringan di latar */
+    const cv = $("#particles");
+    if (cv && !reduce) {
+        const ctx = cv.getContext("2d");
+        let W, H, pts = [], running = true;
+        const init = () => {
+            const dpr = Math.min(devicePixelRatio || 1, 2);
+            W = cv.width = innerWidth * dpr; H = cv.height = innerHeight * dpr;
+            cv.style.width = innerWidth + "px"; cv.style.height = innerHeight + "px";
+            const n = Math.min(70, Math.floor(innerWidth / 18));
+            pts = Array.from({ length: n }, () => ({
+                x: Math.random() * W, y: Math.random() * H,
+                vx: (Math.random() - .5) * .35 * dpr, vy: (Math.random() - .5) * .35 * dpr,
+                r: (Math.random() * 1.4 + .6) * dpr
+            }));
+        };
+        const draw = () => {
+            if (!running) return;
+            ctx.clearRect(0, 0, W, H);
+            const maxD = 130 * (W / innerWidth);
+            for (let i = 0; i < pts.length; i++) {
+                const p = pts[i];
+                p.x += p.vx; p.y += p.vy;
+                if (p.x < 0 || p.x > W) p.vx *= -1;
+                if (p.y < 0 || p.y > H) p.vy *= -1;
+                ctx.fillStyle = "rgba(125, 211, 252, .7)";
+                ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.283); ctx.fill();
+                for (let j = i + 1; j < pts.length; j++) {
+                    const q = pts[j], d = Math.hypot(p.x - q.x, p.y - q.y);
+                    if (d < maxD) {
+                        ctx.strokeStyle = `rgba(125, 211, 252, ${(1 - d / maxD) * .22})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(draw);
+        };
+        init(); draw();
+        addEventListener("resize", init);
+        document.addEventListener("visibilitychange", () => {
+            running = !document.hidden;
+            if (running) draw();
+        });
+    }
+})();
+</script>
+</body>
+</html>
