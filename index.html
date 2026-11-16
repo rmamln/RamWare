@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="icon" type="image/png" href="rama.png">
     <title>RamWare - OS Library</title>
 </head>
@@ -54,7 +54,7 @@
         <div class="toolbar">
             <label class="search">
                 <input type="search" id="search" placeholder="Cari file, misalnya Windows 11 atau Debian" autocomplete="off">
-                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
             </label>
             <div class="chips" id="chips">
                 <button class="chip active" data-filter="all">Semua</button>
@@ -71,11 +71,19 @@
         <!-- INFO ORI / CRACK -->
         <aside class="notice reveal" id="notice">
             <div class="notice-title">
-                <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9 2.4 17.5A2 2 0 0 0 4.1 20.5h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-                Baca dulu sebelum download
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/></svg>
+                <span>Baca dulu sebelum download</span>
             </div>
-            <div class="notice-row"><span class="tag ori">ORI</span><p>File asli, tanpa modifikasi atau crack. Cocok kalau kamu punya lisensi sendiri.</p></div>
-            <div class="notice-row"><span class="tag crack">CRACK</span><p>Versi modifikasi atau pre-aktivasi, bukan rilis resmi vendor. Bisa terdeteksi antivirus (false positive) dan dipakai dengan risiko sendiri. Scan dulu sebelum dijalankan.</p></div>
+            <div class="notice-grid">
+                <div class="ncard ori">
+                    <span class="tag ori">ORI</span>
+                    <p>File asli, tanpa modifikasi atau crack. Cocok kalau kamu punya lisensi sendiri.</p>
+                </div>
+                <div class="ncard crack">
+                    <span class="tag crack">CRACK</span>
+                    <p>Versi modifikasi atau pre-aktivasi, bukan rilis resmi vendor. Bisa terdeteksi antivirus (false positive) dan dipakai dengan risiko sendiri. Scan dulu sebelum dijalankan.</p>
+                </div>
+            </div>
         </aside>
 
         <!-- DAFTAR FILE -->
@@ -84,83 +92,92 @@
             <section class="cat" data-cat="ghost">
                 <h2 class="cat-head">Windows Ghost Spectre</h2>
                 <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1O_X8tQMCArb3WN132Ev0PEt5Ka6H9jPc/view?usp=sharing">
-                    <span class="ico">G</span><span class="name">Windows 10 Ghost Spectre Pro 21H2</span><span class="tag crack">CRACK</span><span class="size">3.6 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">G</span><span class="name">Windows 10 Ghost Spectre Pro 21H2</span><span class="tag crack">CRACK</span><span class="size">3.6 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://www.mediafire.com/file/y06liyv473vs20k/W.11.ProLite+24H2.B26100.7171.Nov25.GS.kuyhAa.7z/file">
-                    <span class="ico">G</span><span class="name">Windows 11 Ghost Spectre Pro 24H2</span><span class="tag crack">CRACK</span><span class="size">5.15 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">G</span><span class="name">Windows 11 Ghost Spectre Pro 24H2</span><span class="tag crack">CRACK</span><span class="size">5.15 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://www.mediafire.com/file/pzg2q5ik4sbdwio/ISO_WIN_11_GS_.zip/file">
-                    <span class="ico">G</span><span class="name">Windows 11 Ghost Spectre (ISO)</span><span class="tag crack">CRACK</span><span class="size">5.29</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">G</span><span class="name">Windows 11 Ghost Spectre (ISO)</span><span class="tag crack">CRACK</span><span class="size">5.29</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
             </section>
 
             <section class="cat" data-cat="win">
                 <h2 class="cat-head">Windows Ori</h2>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/w2gnoi3goxs10j8/Win.10.Pro.22H2.19045.6812.kuyhAa.7z/file">
-                    <span class="ico">W</span><span class="name">Windows 10 Pro 22H2</span><span class="tag ori">ORI</span><span class="size">5.91 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">W</span><span class="name">Windows 10 Pro 22H2</span><span class="tag ori">ORI</span><span class="size">5.91 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/nwhkstoi1zsyre3/W11.24H2.Pro.(26100.7840).kuyhAa.7z/file">
-                    <span class="ico">W</span><span class="name">Windows 11 Pro 24H2</span><span class="tag ori">ORI</span><span class="size">5.13 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">W</span><span class="name">Windows 11 Pro 24H2</span><span class="tag ori">ORI</span><span class="size">5.13 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://od.meong.club/kuyccn/campur/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.kuyhAa.iso">
-                    <span class="ico">W</span><span class="name">Windows 7 Ultimate</span><span class="tag ori">ORI</span><span class="size">3.1 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">W</span><span class="name">Windows 7 Ultimate</span><span class="tag ori">ORI</span><span class="size">3.1 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
             </section>
 
             <section class="cat" data-cat="debian">
                 <h2 class="cat-head">Debian</h2>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://cdimage.debian.org/cdimage/archive/12.10.0/amd64/iso-cd/debian-12.10.0-amd64-netinst.iso">
-                    <span class="ico">D</span><span class="name">Debian 12.10.0 amd64</span><span class="tag ori">ORI</span><span class="size">633 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">D</span><span class="name">Debian 12.10.0 amd64</span><span class="tag ori">ORI</span><span class="size">633 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/ybki19bndht426g/repository_Debian_12.rar/file">
-                    <span class="ico">D</span><span class="name">Repository Debian 12</span><span class="tag ori">ORI</span><span class="size">1 KB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">D</span><span class="name">Repository Debian 12</span><span class="tag ori">ORI</span><span class="size">1 KB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://kebo.pens.ac.id/debian-cd/10.9.0/amd64/iso-dvd/debian-10.9.0-amd64-DVD-1.iso">
-                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-1</span><span class="tag ori">ORI</span><span class="size">3.7 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-1</span><span class="tag ori">ORI</span><span class="size">3.7 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://kebo.pens.ac.id/debian-cd/10.9.0/amd64/iso-dvd/debian-10.9.0-amd64-DVD-2.iso">
-                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-2</span><span class="tag ori">ORI</span><span class="size">4.4 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-2</span><span class="tag ori">ORI</span><span class="size">4.4 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://kebo.pens.ac.id/debian-cd/10.9.0/amd64/iso-dvd/debian-10.9.0-amd64-DVD-3.iso">
-                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-3</span><span class="tag ori">ORI</span><span class="size">4.4 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">D</span><span class="name">Debian 10.9.0 amd64 DVD-3</span><span class="tag ori">ORI</span><span class="size">4.4 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
             </section>
 
             <section class="cat" data-cat="ubuntu">
                 <h2 class="cat-head">Ubuntu</h2>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://ubuntu.com/download/desktop/thank-you?version=25.10&amp;architecture=amd64">
-                    <span class="ico">U</span><span class="name">Ubuntu 25.10 Desktop amd64</span><span class="tag ori">ORI</span><span class="size">5.3 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">U</span><span class="name">Ubuntu 25.10 Desktop amd64</span><span class="tag ori">ORI</span><span class="size">5.3 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
             </section>
 
             <section class="cat" data-cat="exe">
                 <h2 class="cat-head">EXE &amp; Tools</h2>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/oiaqyhzlcqh3g58/VRITUAL_AND_VMware.rar/file">
-                    <span class="ico">E</span><span class="name">Virtual and VMware</span><span class="tag ori">ORI</span><span class="size">588 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">Virtual and VMware</span><span class="tag ori">ORI</span><span class="size">588 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1HkiyHnDBscNm7rTjfzG5KgQfcbGEImjI/view?usp=sharing">
-                    <span class="ico">E</span><span class="name">Driver Pack</span><span class="tag ori">ORI</span><span class="size">651 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">Driver Pack</span><span class="tag ori">ORI</span><span class="size">651 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1IIlcyo4_6MKeEh-arG-VDRkWYDLtcJWl/view?usp=sharing">
-                    <span class="ico">E</span><span class="name">Office Word, Excel, PowerPoint</span><span class="tag crack">CRACK</span><span class="size">1.8 GB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">OFFICE LTSC PROFESSIONAL PLUS 2021 Word, Excel, PowerPoint</span><span class="tag crack">CRACK</span><span class="size">1.8 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://www.mediafire.com/file/xynbnr283ku6wgd/Office_LTSC_PROFESSIONAL_PLUS_2024_RM.zip/file">
+                    <span class="ico">E</span><span class="name">OFFICE LTSC PROFESSIONAL PLUS 2024 Word, Excel, PowerPoint, Access, OneNote, Project, Visio</span><span class="tag crack">CRACK</span><span class="size">3,5 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
+                </a>                
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/fabd54rk1bogzcn/FileZilla_3.69.1_win64_Rm-setup.exe/file">
-                    <span class="ico">E</span><span class="name">FileZilla 3.69.1 (win64)</span><span class="tag ori">ORI</span><span class="size">12 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">FileZilla 3.69.1 (win64)</span><span class="tag ori">ORI</span><span class="size">12 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/9de75zwjyv1sl4g/Packet_Tracer822_64bit_setup_signed_Rm_.exe/file">
-                    <span class="ico">E</span><span class="name">Cisco Packet Tracer</span><span class="tag ori">ORI</span><span class="size">227 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">Cisco Packet Tracer</span><span class="tag ori">ORI</span><span class="size">227 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/0owfgsnhs660mm4/WinSCP-6.5-Setup.exe/file">
-                    <span class="ico">E</span><span class="name">WinSCP 6.5</span><span class="tag ori">ORI</span><span class="size">12 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">WinSCP 6.5</span><span class="tag ori">ORI</span><span class="size">12 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="ori" target="_blank" rel="noopener" href="https://www.mediafire.com/file/ve8wwkt4turnic8/xampp-windows-x64-8.2.12-0-VS16-installer.exe/file">
-                    <span class="ico">E</span><span class="name">XAMPP 8.2.12</span><span class="tag ori">ORI</span><span class="size">150 MB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">XAMPP 8.2.12</span><span class="tag ori">ORI</span><span class="size">150 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://github.com/rmamln/Activasi-win-11/releases/download/MicrosoftActivationScripts(MAS)v3.12/Activator.win.11.zip">
-                    <span class="ico">E</span><span class="name">Microsoft Activation Scripts (MAS) v3.12 tools</span><span class="tag crack">CRACK</span><span class="size">180 KB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">Microsoft Activation Scripts (MAS) v3.12 tools</span><span class="tag crack">CRACK</span><span class="size">180 KB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
                 <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://github.com/rmamln/NitroPDF-Pro-Enterprisex64-Rm/releases/download/NitroPDFProEnterprisex64Rm/NitroPDF.Pro.Enterprisex64.Rm.exe">
-                    <span class="ico">E</span><span class="name">NitroPDF Pro Enterprisex64 Rm</span><span class="tag crack">CRACK</span><span class="size">332 KB</span><span class="dl"><svg><use href="#i-dl"/></svg></span>
+                    <span class="ico">E</span><span class="name">NitroPDF Pro Enterprisex64 Rm</span><span class="tag crack">CRACK</span><span class="size">332 MB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://www.mediafire.com/file/r5g6wjr81tcmqyc/Phtoshp.2026.v27.11.1.kuyhAa.7z/file?action=check">
+                    <span class="ico">E</span><span class="name">Photoshop.2026.v27.11.1 </span><span class="tag crack">CRACK</span><span class="size">5,6 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
+                </a>
+                <a class="item reveal" data-tag="crack" target="_blank" rel="noopener" href="https://www.mediafire.com/file/laiz6m8vymlyl1t/Aftr.Effcts.2026.v26.5.0.89.kuyhAa.7z/file?action=check">
+                    <span class="ico">E</span><span class="name">Adobe After Effect 2026 Full versi 26.5.0.89 </span><span class="tag crack">CRACK</span><span class="size">5,14 GB</span><span class="dl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><use href="#i-dl"/></svg></span>
                 </a>
 
             </section>
@@ -174,7 +191,7 @@
     </main>
 
     <button class="to-top" id="toTop" aria-label="Kembali ke atas">
-        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </button>
 
 <script>
